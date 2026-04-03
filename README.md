@@ -1,7 +1,7 @@
 # Broadino_Project
+ AI chatbot assistant
 
-# AI chatbot assistant
-
+# Code Files
 ** speak_to_chat.py **
 Turn audio into readable commands
 
