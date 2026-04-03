@@ -28,19 +28,21 @@ while True:
 
         #switch to spanish if word in trigger list
         if active_rec == recognizerEN:
-            spanish_triggers = ["my whore oh", "may or oh", "major oh", "measure oh", "may whore oh", "my who are oh", "mejor oh", "my oh", "man whore oh"]
+            spanish_triggers = ["espanyol", "a spaniel", "as spaniel"]
             if any(trigger in text for trigger in spanish_triggers) or "mejor" in text:
 
                 active_rec = recognizerES
+                print("Language: ES")
 
                 continue 
 
         #switch to english if word in trigger list
         elif active_rec == recognizerES:
-            english_triggers = ["big oh", "beck o", "bec o más", "vega a o", "pega o", "beck", "ve", "vega", "ve o"]
+            english_triggers = ["inglés", "hindúes"]
             if any(trigger in text for trigger in english_triggers):
 
                 active_rec = recognizerEN
+                print("Language: EN")
 
                 continue
                 
